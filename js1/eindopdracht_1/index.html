@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <label for="name">Naam: </label>
+    <input type="string" id="name" name="name">
+    </br></br>
+    <label for="age">Leeftijd: </label>
+    <input type="number" id="age" age="age">
+    
+    </br></br>
+    <label for="sym1">symptoom: </label>
+    <input type="string" id="sym1" sym1="sym1">
+    </br></br>
+    <label for="sym2">symptoom: </label>
+    <input type="string" id="sym2" sym2="sym2">
+    </br></br>
+    <label for="sym3">symptoom: </label>
+    <input type="string" id="sym3" sym3="sym3">
+    </br></br>
+
+    <P>Kies uit (koorts, hoesten, verkoudheid, buikpijn, huiduitslag)</P>
+
+
+    <button onclick="symptom()">wat heb ik?</button>
+    <p id="warn"></p>
+</body>
+</html>
+
+
+<!-- cheklcboces
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Show Checkboxes</title>
+</head>
+<body>
+    <h1>Show Checkboxes</h1>
+    <form id="symptomForm">
+        <input type="checkbox" id="sym1" name="symptom" value="Koorts">
+        <label for="sym1"> Koorts </label><br>
+        <input type="checkbox" id="sym2" name="symptom" value="Hoesten">
+        <label for="sym2"> Hoesten </label><br>
+        <input type="checkbox" id="sym3" name="symptom" value="Verkoudheid">
+        <label for="sym3"> Verkoudheid </label><br>
+        <input type="checkbox" id="sym4" name="symptom" value="Buikpijn">
+        <label for="sym4"> Buikpijn </label><br>
+        <input type="checkbox" id="sym5" name="symptom" value="Huiduitslag">
+        <label for="sym5"> Huiduitslag </label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('symptomForm').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent the form from submitting the traditional way
+
+            var checkboxes = document.querySelectorAll('input[name="symptom"]:checked');
+            var selected = [];
+            checkboxes.forEach((checkbox) => {
+                selected.push(checkbox.value);
+            });
+
+            alert('Selected symptoms: ' + selected);
+            console.log('Selected symptoms: ', selected);
+        });
+    </script>
+</body>
+</html>
+
+ -->

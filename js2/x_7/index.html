@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll</title>
+    <script src="./dist/script.js" defer></script>
+    <link rel="stylesheet" href="css/st.css" />
+    <link rel="stylesheet" href="css/shine.css" />
+    <link rel="stylesheet" href="css/result.css" />
+  </head>
+  <body>
+    <div class="inner">
+      <div class="outer">
+        <form id="roller" class="form-group2">
+          <h2 class="btn-shine">Dice Roll</h2>
+          <div class="form-group">
+            <input
+              required
+              placeholder="Number of rolls"
+              class="input-field"
+              type="number"
+              id="numrolls"
+              min="1"
+              max="10000000"
+              step="1"
+            />
+          </div>
+
+          <button type="submit" class="btn">Roll</button>
+          <div id="result" class="form-group2"></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
