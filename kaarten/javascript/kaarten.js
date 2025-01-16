@@ -37,7 +37,7 @@ function main() {
     for (let i = 0; i < speelkaarten.length; i++) {
         for (let j = 0; j < cijfers.length; j++) {
             let cname = `./kaarten/${speelkaarten[i]}${cijfers[j]}.png`
-            createImage(cname)
+            createImage(cname.toLowerCase())
         }
     }
 }

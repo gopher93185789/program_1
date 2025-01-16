@@ -1,0 +1,11 @@
+#js2::-webkit-scrollbar {
+    display: none; 
+}
+
+#js3::-webkit-scrollbar {
+    display: none; 
+}
+
+#extra::-webkit-scrollbar {
+    display: none; 
+}
