@@ -1,45 +1,38 @@
-function stripChar(string, delim) {
-  let container = "";
-  for (let char of string) {
-    if (char != delim) {
-      container += char;
+function write(s) {
+    const tag = document.createElement('p')
+    tag.innerText = s
+    document.body.append(tag)
+}
+
+function load() {
+    const numbersString = document.getElementById("nums").value
+    if (!numbersString) {
+        console.log("err")
+        return
     }
-  }
-  return container;
-}
 
-function getNums(str) {
-  let s = str.split(",");
-  let x = [];
+    const SplitNumbers = numbersString.split(" ")
+    let numbers = []
+    for (let i = 0; i < SplitNumbers.length; i++) {
+        let nn = parseInt(SplitNumbers[i])
+        if (!nn) {
+            continue
+        }
 
-  for (let i = 0; i < s.length; i++) {
-    let num = parseInt(s[i]);
-    if (!isNaN(num)) {
-      x.push(num);
+        numbers.push(nn)
     }
-  }
-  return x
+
+    let sum = (arr) => {
+        n = 0
+        for (let i = 0; i < arr.length; i++) {
+            n += numbers[i]
+        }
+        return n
+    }
+
+
+    write(`Aantal nummers: ${numbers.length}`)
+    write(`Hoogste nummers: ${Math.max(...numbers)}`)
+    write(`Laagste nummers: ${Math.min(...numbers)}`)
+    write(`Gemiddelde: ${sum(numbers)/numbers.length}`)
 }
-
-function average(nums){
-  let sum = 0;
-  for (let i = 0; i < nums.length; i++){
-    sum += nums[i];
-  }
-  return sum / nums.length;
-}
-
-
-function main() {
-  let str =  " "
-  let strippedStr = stripChar(str, " ");
-  let nums = getNums(strippedStr);
-  console.log(`
-    aantal getallen:  ${nums.length}
-    hoogste getal:    ${Math.max(...nums)}
-    laagste getal:    ${Math.min(...nums)}
-    gemiddelde:       ${average(nums)}
-  `);
-}
-
-main();

@@ -5,10 +5,12 @@ function main() {
     window.alert("Je vraagt te veel  ):");
     return;
     }
-
-    while (i > n) {
+	
+	let i = 0;
+    while (i < n) {
         const c = document.createElement("p");
         c.textContent = `Ik feliciteer je ${i} keer!!!`;
         document.body.appendChild(c);
+		i++;
     }
 }
