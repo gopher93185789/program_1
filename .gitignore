@@ -26,3 +26,4 @@ go.work.sum
 
 .vscode
 sftp.json
+/node_modules

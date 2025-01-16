@@ -16,7 +16,7 @@ function createEntries(items, id) {
         anchor.href = item.link;
         anchor.target = '_blank';
         const div = document.createElement('div');
-        div.className = 'h-16 w-full overflow-hidden bg-neutral-900 flex flex-row active:scale-95 items-center gap-3 p-2 hover:shadow-neutral-900 group hover:shadow-lg rounded-lg hover:cursor-pointer hover:scale-[102%] duration-300 ease-in-out will-change-transform';
+        div.className = 'h-16 w-full overflow-hidden bg-neutral-900 flex flex-row active:scale-95 items-center gap-3 p-2 hover:shadow-neutral-800 group hover:shadow-lg rounded-lg hover:cursor-pointer hover:scale-[102%] duration-300 ease-in-out will-change-transform';
     
         const img = document.createElement('img');
         img.className = 'aspect-square xl:flex hidden h-full rounded-md';
