@@ -1,27 +1,3 @@
-// const program1 = [
-//     { title: "Opdracht 1", link: "les 1/opdracht 1/index.html" },
-//     { title: "Opdracht 2", link: "les 2/opdracht2/index.html" },
-//     { title: "Opdracht 3", link: "opdracht_3,4,5,6/index.html" },
-//     { title: "Opdracht 7", link: "opdracht7/index.html" },
-//     { title: "Opdracht 8", link: "opdracht8/index.html" },
-//     { title: "Opdracht 9, 10", link: "opdrach9,10/index.html" },
-//     { title: "Eindopdracht 1", link: "js1/eindopdracht_1/index.html" },
-//     { title: "Eindopdracht 2", link: "js1/eindopdracht_2/index.html" },
-
-// ];
-
-// const program2 = [
-//     { title: "Opdracht 1", link: "js2/opdracht1/index.html" },
-//     { title: "Opdracht 2", link: "js2/opdracht2/index.html" },
-//     { title: "Opdracht 3", link: "js2/opdracht3/index.html" },
-//     { title: "Opdracht 4", link: "js2/opdracht4/index.html" },
-//     { title: "Extra Opdracht 1", link: "js2/x_1/index.html" },
-//     { title: "Extra Opdracht 2", link: "js2/x_2/script.js" },
-//     { title: "Extra Opdracht 3", link: "js2/x_3/index.html" },
-//     { title: "Extra Opdracht 6", link: "js2/x_6/index.html" },
-//     { title: "Extra Opdracht 7", link: "js2/x_7/index.html" },
-// ];
-
 const program3 = [
     { title: "Opdracht 1", link: "js3/opdracht1/index.html" },
     { title: "Opdracht 2", link: "js3/opdracht2/index.html" },
@@ -59,8 +35,5 @@ function createEntries(items, id) {
     });
 }
 
-// createEntries(program1, 'js1')
-// createEntries(program2, 'js2')
 createEntries(program3, 'js3')
 createEntries(extra, 'extra')
-
