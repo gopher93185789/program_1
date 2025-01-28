@@ -6,6 +6,7 @@ const program3 = [
 
 const extra = [
     { title: "kaarten", link: "kaarten/kaarten.html" },
+    {title: "speedo1", link: "speedo/speedo1"}
 ];
 
 function createEntries(items, id) {
