@@ -7,7 +7,7 @@ var balance int64 = 0
 func main() {
 	var input int64
 	fmt.Printf("enter a number to deposit: ")
-	fmt.Scan(&input)
+	fmt.Scanln(&input)
 
 	if input == 0 || input > 1000 {
 		fmt.Println("Invalid input")
